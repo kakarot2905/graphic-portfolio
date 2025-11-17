@@ -4,7 +4,15 @@ import { useState } from 'react'
 import { Play } from 'lucide-react'
 import PortfolioItem from './portfolio-item'
 
-const portfolioItems = [
+interface PortfolioItemType {
+  id: number
+  type: 'image' | 'video'
+  title: string
+  category: string
+  src: string
+}
+
+const portfolioItems: PortfolioItemType[] = [
   {
     id: 1,
     type: "image",
